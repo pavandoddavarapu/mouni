@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill - Payment Method</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div style="background: white; padding: 20px; border-radius: 15px; margin-bottom: 30px;">
+            <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                <rect x="20" y="35" width="60" height="35" stroke="#1e90ff" stroke-width="2" fill="#f0f8ff" rx="5"/>
+                <rect x="25" y="40" width="50" height="3" fill="#1e90ff"/>
+                <rect x="25" y="50" width="30" height="2" fill="#666"/>
+                <rect x="25" y="55" width="25" height="2" fill="#666"/>
+                <rect x="25" y="60" width="20" height="2" fill="#666"/>
+                <circle cx="70" cy="55" r="8" fill="#ffa500"/>
+                <text x="70" y="60" text-anchor="middle" font-size="8" fill="white">₹</text>
+            </svg>
+        </div>
+        
+        <h1 style="color: #1e90ff; margin-bottom: 10px;">SELECT</h1>
+        <h2 style="color: #1e90ff; margin-bottom: 30px;">PAYMENT METHOD</h2>
+        
+        <form action="payment-completed.html" method="get">
+            <div style="margin-bottom: 20px;">
+                <label class="service-card">
+                    <input type="radio" name="payment_method" value="card" style="display: none;" required>
+                    <div class="service-icon">
+                        <div style="width: 30px; height: 20px; background: #1e90ff; border-radius: 3px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.7rem;">💳</div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Credit/Debit Card</h3>
+                        <p>Pay using your card</p>
+                    </div>
+                </label>
+                
+                <label class="service-card">
+                    <input type="radio" name="payment_method" value="upi" style="display: none;" required>
+                    <div class="service-icon">
+                        <div style="width: 30px; height: 20px; background: #ffa500; border-radius: 3px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.7rem;">📱</div>
+                    </div>
+                    <div class="service-info">
+                        <h3>UPI Payment</h3>
+                        <p>Pay using UPI apps</p>
+                    </div>
+                </label>
+                
+                <label class="service-card">
+                    <input type="radio" name="payment_method" value="netbanking" style="display: none;" required>
+                    <div class="service-icon">
+                        <div style="width: 30px; height: 20px; background: #2e7d32; border-radius: 3px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.7rem;">🏦</div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Net Banking</h3>
+                        <p>Pay using internet banking</p>
+                    </div>
+                </label>
+                
+                <label class="service-card">
+                    <input type="radio" name="payment_method" value="wallet" style="display: none;" required>
+                    <div class="service-icon">
+                        <div style="width: 30px; height: 20px; background: #9c27b0; border-radius: 3px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.7rem;">👛</div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Digital Wallet</h3>
+                        <p>Pay using wallet apps</p>
+                    </div>
+                </label>
+            </div>
+            
+            <div class="bill-card" style="margin-bottom: 30px;">
+                <div class="bill-details">
+                    <span>Amount to Pay:</span>
+                    <strong style="color: #1e90ff; font-size: 1.2rem;">₹1940.15</strong>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn-primary" style="width: 100%;">PROCEED TO PAY</button>
+        </form>
+        
+        <a href="service-selection.html" style="color: white; text-decoration: none; margin-top: 20px; display: block;">← Back</a>
+    </div>
+</body>
+</html>

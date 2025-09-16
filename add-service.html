@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill - Add Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="35" r="25" stroke="#000" stroke-width="3" fill="none"/>
+                <path d="M40 25 L50 35 L45 45" stroke="#000" stroke-width="3" fill="none"/>
+                <rect x="45" y="60" width="10" height="8" stroke="#000" stroke-width="3" fill="none"/>
+                <rect x="42" y="68" width="16" height="6" stroke="#000" stroke-width="3" fill="none"/>
+                <rect x="40" y="74" width="20" height="6" stroke="#000" stroke-width="3" fill="none"/>
+            </svg>
+        </div>
+        
+        <h1>ADD SERVICE</h1>
+        
+        <!-- Replaced JavaScript toggle with CSS-only solution using checkbox -->
+        <input type="checkbox" id="showForm" style="display: none;">
+        <label for="showForm" style="background: black; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 30px auto; font-size: 2rem; cursor: pointer;">
+            +
+        </label>
+        
+        <p style="text-align: center; margin-bottom: 40px; line-height: 1.5;">
+            Add service number by tapping<br>
+            on the plus icon. You can<br>
+            register maximum 5 service<br>
+            numbers.
+        </p>
+        
+        <!-- Form now shows/hides with CSS :checked selector -->
+        <div class="add-form">
+            <form class="form-container" action="add-service.html" method="get">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Enter service number(16 digit)" maxlength="16" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Enter your name" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; margin-top: 20px;">SUBMIT</button>
+            </form>
+        </div>
+        
+        <div class="services-list">
+            <h3 style="margin-bottom: 20px;">Registered Service Numbers</h3>
+            <div class="service-card">
+                <div class="service-icon">✓</div>
+                <div class="service-info">
+                    <h3>1315346000607123</h3>
+                    <p>mounika</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

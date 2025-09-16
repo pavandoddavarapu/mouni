@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill - Service Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div style="background: white; padding: 20px; border-radius: 15px; margin-bottom: 30px;">
+            <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                <path d="M30 40 L50 20 L70 40 L60 40 L60 60 L40 60 L40 40 Z" fill="#000"/>
+                <circle cx="50" cy="70" r="8" stroke="#000" stroke-width="2" fill="none"/>
+                <text x="50" y="75" text-anchor="middle" font-size="12" fill="#000">$</text>
+            </svg>
+        </div>
+        
+        <h2 style="margin-bottom: 10px;">pay your electricity</h2>
+        <h2 style="margin-bottom: 30px;">bill by tapping</h2>
+        <h2 style="margin-bottom: 40px;">on the service number</h2>
+        
+        <!-- Removed JavaScript, using radio buttons for selection -->
+        <form action="payment-completed.html" method="get">
+            <label class="service-card">
+                <input type="radio" name="service" value="1357382967903345-mounika" style="display: none;">
+                <div class="service-icon">
+                    <div style="width: 20px; height: 20px; border: 2px dashed #1e90ff; border-radius: 50%;"></div>
+                </div>
+                <div class="service-info">
+                    <h3>1357382967903345</h3>
+                    <p>mounika</p>
+                </div>
+            </label>
+            
+            <label class="service-card">
+                <input type="radio" name="service" value="1534785624686864-gayathri" style="display: none;">
+                <div class="service-icon">
+                    <div style="width: 20px; height: 20px; border: 2px dashed #1e90ff; border-radius: 50%;"></div>
+                </div>
+                <div class="service-info">
+                    <h3>1534785624686864</h3>
+                    <p>gayathri</p>
+                </div>
+            </label>
+            
+            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 40px;">PAY NOW</button>
+        </form>
+    </div>
+</body>
+</html>

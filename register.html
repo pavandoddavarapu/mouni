@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill - Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="35" r="25" stroke="#000" stroke-width="3" fill="none"/>
+                <path d="M40 25 L50 35 L45 45" stroke="#000" stroke-width="3" fill="none"/>
+                <rect x="45" y="60" width="10" height="8" stroke="#000" stroke-width="3" fill="none"/>
+                <rect x="42" y="68" width="16" height="6" stroke="#000" stroke-width="3" fill="none"/>
+                <rect x="40" y="74" width="20" height="6" stroke="#000" stroke-width="3" fill="none"/>
+            </svg>
+        </div>
+        <h1>Registration</h1>
+        
+        <!-- Removed JavaScript, form now submits to home.html directly -->
+        <form class="form-container" action="home.html" method="get">
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Consumer number" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="Address" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" class="form-input" placeholder="Mobile number" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-input" placeholder="E-mail" required>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-input" placeholder="Present reading" required>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-input" placeholder="Previous reading" required>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 20px;">SIGN UP</button>
+        </form>
+        
+        <p style="margin-top: 20px; color: rgba(255,255,255,0.8);">
+            or<br>
+            Already have an account? <a href="login.html" style="color: white; text-decoration: none; font-weight: bold;">log in</a>
+        </p>
+    </div>
+</body>
+</html>
